@@ -1,0 +1,40 @@
+spring:
+  profiles:
+    active: dev
+---
+server:
+  port: 6001
+spring:
+  profiles: dev
+  application:
+    name: mc-config-eureka
+
+eureka:
+  instance:
+    hostname: eureka6001.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eureka6001.com:6001/eureka/
+  server:
+    enable-self-preservation: false
+
+---
+server:
+  port: 6001
+spring:
+  profiles: dev
+  application:
+    name: mc-config-eureka
+
+eureka:
+  instance:
+    hostname: eureka6001.com
+  client:
+    registerWithEureka: false
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://eureka6001.com:6001/eureka/
+  server:
+    enable-self-preservation: true
