@@ -10,7 +10,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml       # mapper映射文件
 
 spring:
-  profile: dev
+  profiles: dev
   application:
     name: mc-product_config11 #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
   datasource:
@@ -42,7 +42,7 @@ mybatis:
   mapper-locations: classpath:mybatis/mapper/**/*.xml       # mapper映射文件
 
 spring:
-  profile: prod
+  profiles: prod
   application:
     name: mc-product_config12 #这个很重要，这在以后的服务与服务之间相互调用一般都是根据这个name
   datasource:
