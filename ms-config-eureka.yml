@@ -24,7 +24,7 @@ eureka:
 server:
   port: 6001
 spring:
-  profiles: dev
+  profiles: prod
   application:
     name: mc-config-eureka
 
