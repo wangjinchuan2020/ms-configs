@@ -36,4 +36,4 @@ eureka:
     serviceUrl:
       defaultZone: http://eureka6001.com:6001/eureka/
   server:
-    enable-self-preservation: true
+    enable-self-preservation: false
