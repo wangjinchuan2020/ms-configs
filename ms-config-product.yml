@@ -1,5 +1,5 @@
 emp: 
-  name: zhangsan
+  name: wangjinchuan
 
 spring:
   profiles:
